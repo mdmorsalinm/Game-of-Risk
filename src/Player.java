@@ -33,7 +33,7 @@ public class Player {
         points -= amount;
         System.out.println("-" + amount + " points. Total points: " + points);
         if (points < 0) {
-            points = 0; // Points cannot go below 0 for display, though game over is at <=0
+            points = 0;
         }
     }
 
@@ -42,7 +42,7 @@ public class Player {
     }
 
     public boolean hasSufficientPoints() {
-        return points > 0; // Game over if points are 0 or less
+        return points > 0; 
     }
 
     public void displayStatus() {
